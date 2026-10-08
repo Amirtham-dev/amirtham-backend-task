@@ -1,0 +1,128 @@
+.day10-container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-family: inherit;
+}
+
+.day10-container .task-card {
+  background-color: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.day10-container .task-card:hover {
+  border-color: #93c5fd;
+  box-shadow: 0 8px 15px -3px rgba(147, 197, 253, 0.2);
+}
+
+.day10-container h2 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.day10-container .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.day10-container .skills-list p {
+  background-color: #f0f7fc;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.day10-container .student-info {
+  background-color: #f8fafc;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e2e8f0;
+}
+
+.day10-container .student-info p {
+  color: #334155;
+  font-size: 0.875rem;
+  margin: 0.25rem 0;
+  font-weight: 500;
+}
+
+.day10-container .btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.day10-container button {
+  background-color: #0284c7;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.625rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 2px 2px 0px #075985;
+  transition: all 0.15s ease;
+}
+
+.day10-container button:hover {
+  background-color: #0369a1;
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0px #075985;
+}
+
+.day10-container button:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+.day10-container .details-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #fdf2f8;
+  border: 1.5px solid #fbcfe8;
+  border-radius: 0.75rem;
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+.day10-container .details-box h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #9d174d;
+  margin-bottom: 0.5rem;
+}
+
+.day10-container .details-box p {
+  color: #831843;
+  font-size: 0.875rem;
+  margin: 0.2rem 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
